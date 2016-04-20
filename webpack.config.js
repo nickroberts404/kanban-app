@@ -1,8 +1,10 @@
 
+const webpack = require('webpack');
 const path = require('path');
 const merge = require('webpack-merge');
 
 const TARGET = process.env.npm_lifecycle_event;
+console.log(TARGET);
 const PATHS = {
 	app: path.join(__dirname, 'app'),
 	build: path.join(__dirname, 'build')
@@ -25,7 +27,7 @@ if (TARGET === 'start' || !TARGET) {
 			historyApiFallback: true,
 			hot: true,
 			inline: true,
-			progress: truem
+			progress: true,
 			stats: 'errors-only',
 			host: process.env.HOST,
 			port: process.env.PORT
