@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/nickroberts404/kanban-app/issues"
   },
-  "homepage": "https://github.com/nickroberts404/kanban-app#readme"
+  "homepage": "https://github.com/nickroberts404/kanban-app#readme",
+  "devDependencies": {
+    "webpack": "^1.13.0"
+  }
 }
